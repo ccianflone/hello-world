@@ -6,3 +6,5 @@ I am adding this text on master. (this was “HEAD” in conflict markers)
 I am adding this line of text on the testFeatureBranch. (this was “Added a line on testFeatureBranch” in conflict markers)
 
 OtherDev adds a change here on his branch off testFeatureBranch
+
+Now some other people have been working on the branch testFeatureBranch…
