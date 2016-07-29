@@ -5,4 +5,8 @@ I am adding this text on master. (this was “HEAD” in conflict markers)
 I am adding this line of text on the testFeatureBranch. (this was “Added a line on testFeatureBranch” in conflict markers)
 
 I’ll edit this.
-So if I have some edits here, will the stash wipe it out?
+
+I am going to make some changes here and stash.  And then I am going to commit some different changes.  I am curious if popping the stash just replaces or gives you a chance to merge.  I read somewhere that it does replace.
+No, it did not replace.  It actually put in the conflict markers allowing me to fix.  Perfect!
+I had the text: So if I have some edits here, will the stash wipe it out?
+And then my new text conflicted.  Perfect.  Just what I wanted.  Why can’t that just happen automatically though without the step of stashing?
