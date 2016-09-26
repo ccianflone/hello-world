@@ -6,3 +6,5 @@ I am adding this line of text on the testFeatureBranch. (this was “Added a lin
 
 I’ll edit this.
 So if I have some edits here, will the stash wipe it out?
+
+Here are a bunch of new edits on Monday, September 26, 2016.  I want to test how to temporarily get older branches so just adding some newer content here for now.
