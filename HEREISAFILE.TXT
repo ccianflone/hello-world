@@ -3,3 +3,5 @@ HEREISAFILE.TXT
 in all caps.  Want to see how renaming (just changing case) works.
 
 Here is a second change.
+
+And a third change.  Want to see how history is maintained when we rename to HereIsAFile.txt
