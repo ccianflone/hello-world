@@ -1,3 +1,5 @@
 HEREISAFILE.TXT
 
 in all caps.  Want to see how renaming (just changing case) works.
+
+Here is a second change.
