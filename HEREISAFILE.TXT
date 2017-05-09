@@ -1,0 +1,3 @@
+HEREISAFILE.TXT
+
+in all caps.  Want to see how renaming (just changing case) works.
