@@ -40,7 +40,26 @@ for example.  Also, clicking on a failed test will bring you to the source test 
 
 This time, let us assume you are using a TDD-work flow and want to quickly run tests in a given test suite, for example, GraceNoteOptionsTest.  You could of course simply do a full test run and wait the long time (currently abbout 60-100 seconds) for the tests to be generated in the Test Navigator.  Of course, everytime you add a new test you will have to do this.  Xcode does not automagically pick up the addition of these dynamically created tests the way it does with normal XCTestCase subclasses (which show up upon first compilation).  Instead, make use of an environment variable (GTEST_FILTER=GraceNoteOptionsTest*) to limit tests to just those tests.  You still need to do a full run of tests (Command-U) for those tests to show up in the Test Navigator but that process should be MUCH faster now.  You can then run just a selection of those tests in the Test Navigator as before.  Happy TDD-ing!
 
-Finally, value paramtereized test now work on the Mac (along with potentially other options, including the use of command line arguments which are now passed correctly to google test).
+Finally, value paramtereized test now work on the Mac (along with potentially other options, including the use of command line arguments which are now passed correctly to google test).  Search for TEST_P in source to see an example.  Note that these show up slightly different in the list:
 
+* FinaleXCTests
+  * FinCocoaPrintTests
+  * GTMGoogleTestRunner
+    * Union/Efix32BoundRectUnionParamTest::thatUnionWorks/8
+    * Union/Efix32BoundRectUnionParamTest::thatUnionWorks/7
+    * Union/Efix32BoundRectUnionParamTest::thatUnionWorks/6
+    * ...
+    * Union/Efix32BoundRectUnionParamTest::thatUnionWorks/0
+    * Contains/Efix32BoundRectUnionParamTest::thatContainsWorks/11
+    * Contains/Efix32BoundRectUnionParamTest::thatContainsWorks/10
+    * Contains/Efix32BoundRectUnionParamTest::thatContainsWorks/9
+    * ...
+    * Contains/Efix32BoundRectUnionParamTest::thatContainsWorks/0
+  * MMClefObjectTests
+  * SpotlightMarkupTestCase
 
+Note also that to work around a bug (more correctly probably just a limitation of valid characters allowed in a SELECTOR name, recall GTMGoogleTestRunner works by exploiting the dynamic nature of Objective-C and adding classes/methods/selectors at runtime), the "/" character is replaced by U+2044 (FRACTION SLASH), which looks about the same:
 
+ ⁄
+
+This is mentioned so that if you try to filter the Test Navigator by "/" (the normal forward slash character), you won't get the list of parameterized tests as you might expect.
