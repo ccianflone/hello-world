@@ -23,9 +23,10 @@ But now you will see something more like this:
 * FinaleXCTests
   * FinCocoaPrintTests
   * GTMGoogleTestRunner
-    * GraceNote first test
+    * GraceNoteOptionsTest::thatGraceNoteOptionsProduceOptionalElements
+    * GraceNoteOptionsTest::thatGraceNoteOptionsIsNotCreatedFromMarkupElementWithBogusElement
     * ...
-    * ending test
+    * BaselinesMarkupTest::thatMoveMappingSetterIsFoundForBaselinesSysLyricVerse
   * MMClefObjectTests
   * SpotlightMarkupTestCase
 
