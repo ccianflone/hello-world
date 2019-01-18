@@ -32,5 +32,15 @@ But now you will see something more like this:
 
 If you have introduced a failure, you may actually find it much easier to look in the Test Navigator and use the "Show only failing tests" icon that looks something like an x in a diamong at the bottom of the Test Navigator.  (Part of the reason this stopped working in Xcode is that we were not keeping up with latest versions of GTMGoogleTestRunner.mm.)
 
+If you find you have broken an existing test you can now also right click on the test in the Test Navigator and select:
+
+* Run "GraceNoteOptionsTest::thatGraceNoteOptionsProduceOptionalElements"
+
+for example.  Also, clicking on a failed test will bring you to the source test where the failure occurred.  (Note: this does not currently work for passing tests.)  Note that you can also make an arbitrary selection of tests to run in the Test Navigator.
+
+This time, let us assume you are using a TDD-work flow and want to quickly run tests in a given test suite, for example, GraceNoteOptionsTest.
+
+
+
 
 
