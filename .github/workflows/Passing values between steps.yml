@@ -14,8 +14,10 @@ jobs:
         id: var_source_step
         run: |
           echo "Performing a random task"
-          echo "::set-output name=var1_name::ChrisCianflone"
-          echo "::set-output name=var2_date::$(date +'%Y-%m-%d-%H-%M')"
+          # these are deprecated now (save-state calls would use $GITHUB_STATE)
+          #echo "::set-output name=var1_name::ChrisCianflone"
+          #echo "::set-output name=var2_date::$(date +'%Y-%m-%d-%H-%M')"
+          echo "var1_name=ChrisCianflone" >> $GITHUB_OUTPUT
 
       - name: Get-Variable-Value
         run: |
