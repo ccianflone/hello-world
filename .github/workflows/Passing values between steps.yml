@@ -18,6 +18,7 @@ jobs:
           #echo "::set-output name=var1_name::ChrisCianflone"
           #echo "::set-output name=var2_date::$(date +'%Y-%m-%d-%H-%M')"
           echo "var1_name=ChrisCianflone" >> $GITHUB_OUTPUT
+          echo "var2_date=$(date +'%Y-%m-%d-%H-%M')" >> $GITHUB_OUTPUT
 
       - name: Get-Variable-Value
         run: |
