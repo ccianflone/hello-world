@@ -1,4 +1,4 @@
-name: 'Default environment variables 2'
+name: 'Default environment variables'
 
 on:
   push:
