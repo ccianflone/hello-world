@@ -1,4 +1,4 @@
-name: 'Custom Env Vars'
+name: 'Custom Env Vars Homework'
 
 on:
   workflow_dispatch:
